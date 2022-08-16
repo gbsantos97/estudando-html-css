@@ -1,9 +1,15 @@
-
-
+.box  {
+    height: 250px;
+    width: 250px;
+    background-image:url(https://source.unsplash.com/random);
+}
+body {
+    background-color: #6a99c0;
+}
 h1 {color: #1100ad;  
     border: 20px #000000;
     border-style: double;
-    
+    font-family: 'DynaPuff', cursive;
 }
 h2 {
     

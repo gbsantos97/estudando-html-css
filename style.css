@@ -5,6 +5,7 @@
 .m-40 {
 margin: 40px;
 }*/
+
 h1 /*podendo se aplicado assim para multiplos h1,h2*/  {
    /* border: 20px #000000;*//*bordas*/
     color: red;/*cor*/
@@ -12,6 +13,9 @@ h1 /*podendo se aplicado assim para multiplos h1,h2*/  {
     background-color: rgb(143, 43, 43);/*cor de fundo*/
     margin: 20px;/*margem*/ 
     padding: 60px; /*espaço dentro da caixa*/
+    font-family: 'DynaPuff', cursive; /*aqui estou adicionando a fonte que veio do fonts.google.com*/
+    width: 100%; /*largura*/
+    height: 100%;/*altura*/
 }/*h1 aqui é o Seletor...
 declaração é oque fica dentro do {}  
 as propriedades são color bababa...
