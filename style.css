@@ -16,6 +16,8 @@ h1 /*podendo se aplicado assim para multiplos h1,h2*/  {
     font-family: 'DynaPuff', cursive; /*aqui estou adicionando a fonte que veio do fonts.google.com*/
     width: 100%; /*largura*/
     height: 100%;/*altura*/
+    border: 4px solid green;/*bordas*/
+    outline: 4px solid yellow;/*por fora da caixa*/
 }/*h1 aqui é o Seletor...
 declaração é oque fica dentro do {}  
 as propriedades são color bababa...
@@ -30,3 +32,8 @@ Conecta um elemento HTML com CSS
 * Classe Selector '.red, .m-4
 *Attribute Selector, Pseudo-class, Pseudo-element, e outros
 */
+/*Tamanho (largura x altura) → width | height
+Conteúdo → content
+Bordas → border
+Preenchimento interno → padding
+Espaços fora da caixa → margin*/ 

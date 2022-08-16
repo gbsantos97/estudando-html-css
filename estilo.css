@@ -2,6 +2,12 @@
     height: 250px;
     width: 250px;
     background-image:url(https://source.unsplash.com/random);
+    background-repeat: no-repeat;
+}
+.box::after {
+	content: "Isso é uma string";
+    color: #ff0000;
+    font-family: 'DynaPuff', cursive;
 }
 body {
     background-color: #6a99c0;
