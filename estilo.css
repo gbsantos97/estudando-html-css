@@ -1,24 +1,25 @@
 
-h1 {color: #301549;  
-    border: #301549;
+
+h1 {color: #1100ad;  
+    border: 20px #000000;
     border-style: double;
     
 }
 h2 {
     
-    color: #0d56b6;
-    border: #b00db6;
+    color: #b60d0d;
+    border: #000000;
     border-style: double;
 } 
 h3 {
     
-    color: #0d56b6;
-    border: #b00db6;
+    color: #b60d0d;
+    border: #000000;
     border-style: double;
 } 
 h4 {
     
-    color: #0d56b6;
-    border: #b00db6;
+    color: #b60d1b;
+    border: #000000;
     border-style: double;
 }

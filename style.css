@@ -1,0 +1,28 @@
+/* {background-color: rgb(24, 133, 184);} /*exemplo de seletor global*/
+/*#container {
+    width: 200px;
+}
+.m-40 {
+margin: 40px;
+}*/
+h1 /*podendo se aplicado assim para multiplos h1,h2*/  {
+   /* border: 20px #000000;*//*bordas*/
+    color: red;/*cor*/
+    font-size: x; /*tamanho da fonte*/
+    background-color: rgb(143, 43, 43);/*cor de fundo*/
+    margin: 20px;/*margem*/ 
+    padding: 60px; /*espaço dentro da caixa*/
+}/*h1 aqui é o Seletor...
+declaração é oque fica dentro do {}  
+as propriedades são color bababa...
+e o valor que é oque vai na propriedade*/
+/*
+#seletores
+Conecta um elemento HTML com CSS
+## Tipos
+* Global selector '*'
+* Element/Type Selector 'h1,h2,p,div'
+* ID Selector '#box,container'
+* Classe Selector '.red, .m-4
+*Attribute Selector, Pseudo-class, Pseudo-element, e outros
+*/
