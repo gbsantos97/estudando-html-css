@@ -2,7 +2,7 @@
     height: 250px;
     width: 250px;
     background-image:url(https://source.unsplash.com/random);
-    background-repeat: no-repeat;
+    background-repeat: content;
 }
 .box::after {
 	content: "Isso é uma string";
