@@ -20,12 +20,12 @@ h1 /*podendo se aplicado assim para multiplos h1,h2*/  {
     background-color: rgb(143, 43, 43);/*cor de fundo*/
     background-size: contain ;/*com essa posso alterar tamanho da imagem ou como no exemplo usar a propriedade contain para limitar a imagem dentro da caixa*/
     background-position: center; /*aqui marca a posição*/
-    background-repeat: no-repeat;/*aqui se a imagem vai se repetir*/
+    background-repeat: no-repeat;/*aqui é, sobre a imagem se repetir ou não*/
     background-image:url(https://source.unsplash.com/random);/*aqui tag para imagem*/
     background-attachment: fixed; /*aqui é para travar a imagem de fundo ou posso usar a property 'scroll' para o fundo seguir a rolagem*/
 }
 h2 {
-    background: linear-gradient(red, blue)/* gradient é o famoso degrade*/
+    background: linear-gradient(red, blue);/* gradient é o famoso degrade*/
 
 }
 h3 {

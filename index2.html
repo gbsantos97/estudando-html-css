@@ -10,19 +10,62 @@
 </head>
 <body>
     <div id="container" class="m-40"> <!--aqui o id esta configurado no css-->
-        <h1>
-            Evolua Rapido
-        </h1>
-     <h2>
-      Descrição
-     </h2>
-        <button>
-            embarcar
-        </button>
-        <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, iste possimus? Possimus, maiores? Quos praesentium, architecto saepe vitae vel numquam sint, quo neque, facere officia pariatur dolores perferendis alias ad?
-            
-        </h3>
+                <h1>
+                    Evolua Rapido
+                </h1>
+                <h2>
+                Descrição
+                </h2>
+
+                                <button>
+                                    embarcar
+                                </button>
+
+                <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, iste possimus? Possimus, maiores? Quos praesentium, architecto saepe vitae vel numquam sint, quo neque, facere officia pariatur dolores perferendis alias ad?
+                    
+                </h3>
+        <!--<video src="https://www.youtube.com/watch?v=A8kp0XFS3Wo&list=RDA8kp0XFS3Wo&start_radio=1&ab_channel=BiaMarques" controls > 
+           
+            <p>
+                 o video          EXEMPLO 1
+            </p>
+        </video>--> 
+        <video controls
+        width="800"
+        height="400"
+        muted
+        autoplay      
+        preload="metadata"
+        loop 
+        poster="https://source.unsplash.com/random"
+        > 
+        <!--EX 2 tentar fazer com um video de fora do youtube direto da pasta aqui dentro -->
+        <source src="https://www.youtube.com/watch?v=A8kp0XFS3Wo&list=RDA8kp0XFS3Wo&start_radio=1&ab_channel=BiaMarques" type="video/mp4">
+        
+                            <p>
+                                o video
+                            </p>
+        </video>
+        <!--
+        width="800"  largura 
+        height="400" altura 
+        muted        se o video deve começar mutado
+        autoplay     reprodução auto
+        preload      pre carregar o video auto ou none ou meta data q é para carregar o essencial do video antes do click
+        loop         para ficar repetindo o video
+        poster       nosso famoso click bait da imagem no youtube imagem q fica antes do video carregar
+        'TAG audio'  pode ser aplicada da mesma forma q a tag video      
+        -->
+         
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/A8kp0XFS3Wo" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
     </div>
 </body>
 </html>
