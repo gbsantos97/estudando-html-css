@@ -1,0 +1,17 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+}
+.box1 {
+    background-color: red;
+    position: relative; /* essa tag é para poder atribuir mais 5 propriedades top, hight, bottom, left, z-i*/
+    left: 250px; /*distanciar da margem para direita*/
+    top: 150px;/*distanciar da margem para baixo*/
+}
+.box2 {
+    background-color: rgb(217, 255, 0);
+}
+.box3 {
+    background-color: rgb(38, 0, 255);
+}
