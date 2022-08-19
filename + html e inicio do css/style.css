@@ -23,6 +23,12 @@ h1 /*podendo se aplicado assim para multiplos h1,h2*/  {
     background-repeat: no-repeat;/*aqui é, sobre a imagem se repetir ou não*/
     background-image:url(https://source.unsplash.com/random);/*aqui tag para imagem*/
     background-attachment: fixed; /*aqui é para travar a imagem de fundo ou posso usar a property 'scroll' para o fundo seguir a rolagem*/
+    letter-spacing: normal; /*aqui é o espaçamento das letras*/
+    word-spacing: normal; /*aqui é o espaçamento entre as palavras*/
+    line-height: normal; /*aqui é os espaços entre as linhas*/
+    text-transform: none; /*aqui é para transformação de texto*/
+    text-decoration: underline blueviolet; /*aparencia decorativa de texto da para adicionar varias propriedades*/
+    text-align: center;
 }
 h2 {
     background: linear-gradient(red, blue);/* gradient é o famoso degrade*/
