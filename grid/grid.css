@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header" /*aqui as aspas siguinificam as linhas */
+    "main aside"
+    "footer footer"; /*aqui da para colocar cada um em um lugar especificos*/
+    grid-template-rows: 30px 1fr 40px; /*aqui é a sequencia de tamanhos de cada uma das linhas "rows" */
+    /*ali foi dado o tamano de 30 px pra primeira linha na segunda linha que é a main e a aside 
+foi adicionado uma fração "1fr" que é flexivel ela ocupa automaticamente oque sobra e 40 px para o rodapé para q a main
+consuma oque resta da tela 2 pontos fixos e o do meio flex*/
+    grid-template-columns: 1fr 80px;/*aqui estamos mechendo com a coluna da pagina no caso a main continua flex 
+    e definimos a aside para 80 px */
+}
+
+header {
+    grid-area: header; /*aqui é o informe pro grid de qual caixa estamos falando para podermos posicionar nas linhas*/ 
+    background-color: green;
+    display: flex; /*aqui a gente esta ignorando a sequencia da div tipo colocando as duas uma do lado da outra */ 
+    justify-content: space-between;/*para poder colocar cada uma em um canto  "space-between espaço entre eles"*/
+    align-items: center;/*e aqui como ja diz a tag alinhamento dos itens no caso "center" alinhando no centro*/
+    padding: 0 8px; /*tirando espaço do topo e distanciando 8px das laterais*/
+}
+
+main {
+    grid-area: main;
+    background-color: red;
+}
+
+aside {
+    grid-area: aside;
+    background-color: blue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: gray;
+}
