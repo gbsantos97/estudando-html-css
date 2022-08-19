@@ -9,7 +9,7 @@ margin: 40px;
 h1 /*podendo se aplicado assim para multiplos h1,h2*/  {
    
     color: red;/*cor*/
-    font-size: x; /*tamanho da fonte*/
+    font-size: 100px; /*tamanho da fonte*/
     margin: 20px;/*margem*/ 
     padding: 60px; /*espaço dentro da caixa*/
     font-family: 'DynaPuff', cursive; /*aqui estou adicionando a fonte que veio do fonts.google.com*/
