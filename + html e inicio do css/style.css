@@ -28,7 +28,10 @@ h1 /*podendo se aplicado assim para multiplos h1,h2*/  {
     line-height: normal; /*aqui é os espaços entre as linhas*/
     text-transform: none; /*aqui é para transformação de texto*/
     text-decoration: underline blueviolet; /*aparencia decorativa de texto da para adicionar varias propriedades*/
-    text-align: center;
+    text-align: center; /*posicionamento do texto*/
+}
+p {
+    text-shadow: 1px 1px 1px red; /*sombra estilizavel*/
 }
 h2 {
     background: linear-gradient(red, blue);/* gradient é o famoso degrade*/

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <form action="" method=""> <!-- action é o endereço para onde sera enviado e o method é em qual metodo ele sera enviado-->
+<!-- no metodo os mais usados são 
+        GET  -- é mais para fazer campos de pesquisa pois não precisa esconder dados
+        POST -- é mais provavel para quando o formulario é para criação de usuarios porque ele não vai deixar o usuario mt exposto
+-->         <fieldset> 
+<!-- aqui é o exemplo fildser dentro do formulario -->
+                    <legend> <!--legend é para definir o nome do agrupamento-->
+                        Contato
+                    </legend>
+
+                <label for="">Nome ex dentro</label>
+
+                <input type="text" value="">
+
+                <button type="reset">  Limpar  </button>
+                <button type="submit"> Enviar</button>
+                <button autofocus>o botão foco</button> <!--o autofocus serve para focar o elemento button EX estou na pagina apertei um enter ele vai no botão foco-->
+             
+           </fieldset>
+
+    </form>
+
+
+
+
+
+   <form id= "Contato"action=""></form>
+
+   <fieldset form="Contato" > 
+                <!-- aqui é o exemplo fildset fora do formulario linkado pelo form -->
+
+                        <legend>  
+                            Contato
+                        </legend>
+    
+                    <label for="">Por fora linkado</label>
+    
+                    <input type="email" autocomplete="email" required placeholder="Digite seu email"/><!-- auto complete é para preenchimento automatico e required para deixar o campo obrigatorio-->
+    
+   </fieldset>
+    <!--DATALIST-->
+    
+    <input type="text" list="lista1"
+    placeholder="escolha um obj" /> <!--place holder informativo dentro da caixa-->
+
+    <datalist id="lista1">
+ 
+<option>obj1</option>
+<option>obj2</option>
+<option>obj3</option>
+<option>obj4</option>
+<option>obj5</option>
+
+    </datalist> <br>
+   <!--
+    TIPOS DE INPUT
+<input type="text"> texto
+<input type="date"> data
+<input type="number"> numeros
+<input type="email"> email
+<input type="file"> puxa arquivos do computador
+<input type="password"> senhas
+<input type="checkbox">
+   -->
+   <input type="password"
+    minlength="4"
+    maxlength="8"
+    size="8" 
+    >
+    <!--                  INPUT
+        minlength="4"     MINIMO DE CARACTERS
+         maxlength="8"    MAXIMO
+         size="8"         TAMANHAO DO CAMPO
+         pattern          OBRIGATORIO CONTER NO CAMPO...AQUI DITA AS REGRAS SOBRE
+         spellcheck       HABILITAR CORREÇÃO ORTOGRAFICA??
+         required         CAMPO OBRIGATORIO
+         autocomplete     PREENCHIMENTO AUTOMATICO
+         placeholder      INFORMATIVO DENTRO DA CAIXA
+         accept           ACEITANDO ARQUIVOS DO TIPO .....
+         multiple         PARA PODER SELECIONAR MULTIPLOS ARQUIVOS ETC
+         anctype          SOMENTE PARA ESTRUTURA TIPO FILE EX: anctype="multpart/form-data"
+                               FORM         
+         action           PARA ONDE VAI SER ENVIADO
+         method           QUAL O METODO DE ENVIO GET OU POST
+                               BOTÃO
+         autofocus        focar elemento, max 1
+--> <br>
+<input type="text"
+ pattern="[0-9a-fA-F] {4,8}"
+ title="Coloque de 4 a 8 caracteres">
+   
+ <form id= "email2"action=""></form>
+
+   <fieldset form="email2" > 
+                
+
+                        <legend>  
+                            Contato
+                        </legend>
+    
+                    <label for="">E-mail</label>
+                    <input type="email" 
+                    multiple
+                    pattern=".+@gmail.com"> 
+                    <button type="submit">Enviar</button>
+    
+   </fieldset>
+<form action="">
+            <datalist id="urlsdata">
+                <option >https://exemple.com.br</option>
+                <option >https://exemple2.com.br</option>
+            </datalist>
+
+            <input type="url"
+            placeholder="http://exemple.com" 
+            pattern=".*\.com\.br.*"
+            title="somente dominios com .com.br serão aceitos"
+            required
+            spellcheck="false"
+            list="urlsdata">
+
+            <button type="submit">Enviar</button>
+</form>
+<form action="" method="post" anctype="multpart/form-data">
+
+        <input type="file" accept="image/*" multiple>
+
+        <button type="submit">Enviar</button>
+        
+</form>
+</body>
+</html>
