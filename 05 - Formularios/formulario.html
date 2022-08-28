@@ -66,7 +66,7 @@
 <option>obj5</option>
 
     </datalist> <br>
-   <!--
+  <!--
     TIPOS DE INPUT
 <input type="text"> texto
 <input type="date"> data
@@ -75,17 +75,15 @@
 <input type="file"> puxa arquivos do computador
 <input type="password"> senhas
 <input type="checkbox">
-   -->
-   <input type="password"
-    minlength="4"
-    maxlength="8"
-    size="8" 
-    >
-    <!--                  INPUT
-        minlength="4"     MINIMO DE CARACTERS
+<input type="hidden">
+<input type="radio">
+<input type="search">
+
+                       INPUT
+         minlength="4"     MINIMO DE CARACTERS
          maxlength="8"    MAXIMO
-         size="8"         TAMANHAO DO CAMPO
-         pattern          OBRIGATORIO CONTER NO CAMPO...AQUI DITA AS REGRAS SOBRE
+         size="8"         TAMANHO DO CAMPO
+         pattern          OBRIGATORIO CONTER NO CAMPO...=" " AQUI DITA AS REGRAS SOBRE
          spellcheck       HABILITAR CORREÇÃO ORTOGRAFICA??
          required         CAMPO OBRIGATORIO
          autocomplete     PREENCHIMENTO AUTOMATICO
@@ -93,11 +91,19 @@
          accept           ACEITANDO ARQUIVOS DO TIPO .....
          multiple         PARA PODER SELECIONAR MULTIPLOS ARQUIVOS ETC
          anctype          SOMENTE PARA ESTRUTURA TIPO FILE EX: anctype="multpart/form-data"
+         arial-label      
+         step             PULAR NUMEROS
+         range
                                FORM         
          action           PARA ONDE VAI SER ENVIADO
          method           QUAL O METODO DE ENVIO GET OU POST
                                BOTÃO
          autofocus        focar elemento, max 1
+   <input type="password"
+    minlength="4"
+    maxlength="8"
+    size="8" 
+    > 
 --> <br>
 <input type="text"
  pattern="[0-9a-fA-F] {4,8}"
@@ -135,12 +141,80 @@
 
             <button type="submit">Enviar</button>
 </form>
-<form action="" method="post" anctype="multpart/form-data">
+
+
+<fieldset>
+    <form action="" method="post" anctype="multpart/form-data">
 
         <input type="file" accept="image/*" multiple>
 
         <button type="submit">Enviar</button>
         
-</form>
+    </form>
+</fieldset>
+    
+    <input type="hidden" name="id"value="8"><!--escondido-->
+    <fieldset>
+               <legend>Bora tomar um café ?</legend>
+
+    <label for="yep">sim</label>
+            <input type="radio" id="yep" name="coffee"value="yes">
+
+
+     <label for="nono">não</label>
+            <input type="radio" id="nono" name="coffee" value="no">
+       
+    </fieldset>
+
+    <fieldset>
+        <input type="range" min="1" max="100" step="1">
+    </fieldset>
+<!--campo das datas-->
+    <fieldset>
+        <input type="date" value="2022-08-27">
+    </fieldset>
+    <fieldset>
+        <input type="datetime-local">
+    </fieldset>
+    <fieldset>
+        <input type="month">
+    </fieldset>
+    <fieldset>
+        <input type="time">
+    </fieldset>
+    <fieldset>
+        <input type="week">
+    </fieldset>
+<!--AREA DE TEXTO-->
+    <textarea name="" id="" cols="30" rows="10" maxlength="" minlength="" wrap="off" placeholder="Digite seu texto"></textarea><!--ex de area de texto cols "colunas" rows "linhas"-->
+<!--SELECT LISTA DE SELEÇÃO-->
+    <fieldset>
+        <label for="carselect">Qual Modelo?</label><br>
+        <select name="carmodel" id="carselect">
+            <option value="fiat">Uno</option>
+            <option value="ford">Fox</option>
+            <option value="chevrolet">Toro</option>
+            <option value="honda">Civic</option>
+            <option value="audi">A3</option>
+        </select>
+    </fieldset>
+<!--GRUPO DE OPÇÕES-->
+    <fieldset>
+        <label for="">Qual Modelo?</label><br>
+        <select name="" id="">
+            <optgroup>
+                <option value="">VAZIO PARA INFORMAR</option>
+                <option value=""></option>
+                <option value=""></option>
+            </optgroup>
+            <optgroup>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </optgroup>
+            
+        </select>
+    </fieldset>
+
 </body>
 </html>
