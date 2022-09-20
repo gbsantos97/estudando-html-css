@@ -23,4 +23,20 @@ console.log({
     
 })
 
+// let objeto = {
+//     nomes: ['Rodrigo', 'Gabriel'],
+//     idades: [20, 25],
+//   };
+  
+//   objeto.nomes = 'Gabriel';
+  
+//   console.log(objeto);   aqui estou acessando a chave (nome) do Objeto (objeto)
+
+
+/* {} Objetos
+   () chamado de função
+   [] Array
+   '' "" string
+   ``  crase
+   */
 

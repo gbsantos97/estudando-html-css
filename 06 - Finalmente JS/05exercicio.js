@@ -37,3 +37,5 @@ students = [
     jhon
 ]
 console.log(students)
+
+document.write('bom dia')
