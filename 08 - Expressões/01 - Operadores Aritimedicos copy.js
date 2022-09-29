@@ -12,7 +12,7 @@ let remainder
 remainder = 11 % 9
 //console.log(remainder)
 
-// incremento **
+// incremento ++
 let increment = 0
 
 // console.log(increment++)
