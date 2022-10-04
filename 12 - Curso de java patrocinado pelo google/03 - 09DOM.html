@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(59, 150, 230);
+            color: white;
+            font: normal 18 Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos DOM</h1>
+    <p>aqui vai o resultado</p><!-- aqui é o paragrafo [0]     -->
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p><!-- aqui é o paragrafo [1]     -->
+    <div id="msg">Clique aqui</div>
+    <script>//declarei a variavel p1 para receber a arvore DOM 
+                                //essa get element seleciona por marca e pode selecionar + de uma tag
+                                //getElementsByTagName('p')[1] 
+                                //obter elementos por nome de tag ('nome da tag')[e o lugar onde ela esta ]
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var corpo = window.document.body
+        // var d = window.document.getElementById('msg')//por id
+        var d = window.document.querySelector('div#msg')
+        //query selector quando  (# == id ) (. pontinho == classe)
+        d.style.background ='green'
+        window.document.write('esta escrito assim' + p1.innerText)
+        window.document.write('esta escrito assim' + p1.innerHTML)
+        // innerText - "o texto que esta dentro da" aqui no caso é o texto da var p1 (ele pega somente o texto, sem a formatação EX '<strong>DOM</strong>')
+        //inner HTML - aqui ele pega o html inteiro EX '<strong>DOM</strong>'
+        p1.style.color = 'blue  '
+
+        corpo.style.background = 'red'
+    </script><!--DOM modelo de objetos para documentos
+                  é um facilitador de acesso as tags-->
+</body>
+</html>
