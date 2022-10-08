@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(76, 154, 243);
+    font-family: 'DynaPuff', cursive;
+    font-style: italic;
+   
+} 
+
+header {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    
+ 
+}
+section { 
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 3px 3px 10px;
+
+}
+
+div {
+  
+    font-size: 20px;
+    margin: auto;
+    padding: 8px;
+}
+button {
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    padding: 2px;
+    text-align: right;
+
+   
+}   
+footer { 
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+   
+  
+
+}
